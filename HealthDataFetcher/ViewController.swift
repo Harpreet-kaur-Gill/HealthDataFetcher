@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  HealthDataFetcher
+//  FitbitDataFetcher
 //
 //  Created by Harpreet_kaur on 22/08/19.
 //  Copyright © 2019 Harpreet_kaur. All rights reserved.
@@ -13,21 +13,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //Mark:-To fetch Data from HealthKit.
+        //Mark:-To Fetch Data From Healhtkit.
         HealthKitInterface.sharedInstance = HealthKitInterface()
         NotificationCenter.default.addObserver(self,selector: #selector(self.getDistanceFromHealthKit),name: NSNotification.Name(rawValue:healthKitAutorized),object: nil)
         
-        
-        
-        //Mark:-To fetch Data from Fitbit.
+        //Mark:-Function to Fetch Data From Fitbit.
         FitbitInterface.sharedInstance = FitbitInterface()
-        self.getCaloriesFromFitbit()
-        NotificationCenter.default.addObserver(self,selector: #selector(self.getCaloriesFromFitbit),name: NSNotification.Name(rawValue:FitbitNotification),object: nil)
+        NotificationCenter.default.addObserver(self,selector: #selector(self.getStepsFromFitbit),name: NSNotification.Name(rawValue:FitbitNotification),object: nil)
     }
     
     @objc func getDistanceFromHealthKit() {
-        //TO fetch other metric(like steps, calories etc need to change the type)
+        //Mark:-Need to change the type to get data of other metrics.
         HealthKitInterface.sharedInstance?.fetchDataFromHealthKit(forSpecificDate: Date(), type: .distance,completion: { (double, error) in
             if error == nil {
                 print("Distance \(double)")
@@ -35,10 +31,10 @@ class ViewController: UIViewController {
         })
     }
     
-    @objc func getCaloriesFromFitbit()  {
-        FitbitInterface.sharedInstance?.getDataPeriodically(resourcePath: FitBitResourcePath.steps.path, startDate: Date(), endDate: Date()) { (value) in
-            print("Steps \(value)")
+    @objc func getStepsFromFitbit() {
+        //Mark:-Need to change the type to get data of other metrics
+        FitbitInterface.sharedInstance?.getDataPeriodically(resourcePath: FitBitResourcePath.steps.path, startDate: Date().dayBefore, endDate: Date()) { (value) in
         }
     }
-    
 }
+
