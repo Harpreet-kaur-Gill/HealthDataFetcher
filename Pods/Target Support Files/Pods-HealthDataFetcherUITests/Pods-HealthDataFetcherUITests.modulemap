@@ -1,0 +1,6 @@
+framework module Pods_HealthDataFetcherUITests {
+  umbrella header "Pods-HealthDataFetcherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

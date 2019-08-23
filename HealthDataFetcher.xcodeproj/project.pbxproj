@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0121A528230EB6DA0007FFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A527230EB6DA0007FFAD /* AppDelegate.swift */; };
+		0121A52A230EB6DA0007FFAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A529230EB6DA0007FFAD /* ViewController.swift */; };
+		0121A52D230EB6DA0007FFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A52B230EB6DA0007FFAD /* Main.storyboard */; };
+		0121A52F230EB6DD0007FFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0121A52E230EB6DD0007FFAD /* Assets.xcassets */; };
+		0121A532230EB6DD0007FFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0121A530230EB6DD0007FFAD /* LaunchScreen.storyboard */; };
+		0121A53D230EB6DD0007FFAD /* HealthDataFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A53C230EB6DD0007FFAD /* HealthDataFetcherTests.swift */; };
+		0121A548230EB6DD0007FFAD /* HealthDataFetcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A547230EB6DD0007FFAD /* HealthDataFetcherUITests.swift */; };
+		0121A559230EB6F50007FFAD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A557230EB6F50007FFAD /* Common.swift */; };
+		0121A55A230EB6F50007FFAD /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A558230EB6F50007FFAD /* DateExtension.swift */; };
+		0121A55D230EB6FB0007FFAD /* FitbitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A55C230EB6FB0007FFAD /* FitbitInterface.swift */; };
+		0121A560230EB7000007FFAD /* HealthKitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0121A55F230EB7000007FFAD /* HealthKitInterface.swift */; };
+		0145A057230EBC2300E07C13 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0145A056230EBC2300E07C13 /* HealthKit.framework */; };
+		0145A05E230EBCC800E07C13 /* FitbitAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0145A059230EBCC700E07C13 /* FitbitAPIManager.m */; };
+		0145A05F230EBCC800E07C13 /* FitbitAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0145A05A230EBCC700E07C13 /* FitbitAuthHandler.m */; };
+		0145A061230EBD0800E07C13 /* FitBitLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0145A060230EBD0800E07C13 /* FitBitLogin.swift */; };
+		615B4124A1386497AC720B0A /* Pods_HealthDataFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF22D2283229FD19EFBA7476 /* Pods_HealthDataFetcher.framework */; };
+		E56B7AF67DC53D866837C805 /* Pods_HealthDataFetcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B362E9F1E87543F9E8694E58 /* Pods_HealthDataFetcherTests.framework */; };
+		F6B03FE7B83C603F10D6076B /* Pods_HealthDataFetcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C84896A72469D7CA51C45E /* Pods_HealthDataFetcherUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0121A539230EB6DD0007FFAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0121A51C230EB6DA0007FFAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0121A523230EB6DA0007FFAD;
+			remoteInfo = HealthDataFetcher;
+		};
+		0121A544230EB6DD0007FFAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0121A51C230EB6DA0007FFAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0121A523230EB6DA0007FFAD;
+			remoteInfo = HealthDataFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0121A524230EB6DA0007FFAD /* HealthDataFetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthDataFetcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0121A527230EB6DA0007FFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0121A529230EB6DA0007FFAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0121A52C230EB6DA0007FFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0121A52E230EB6DD0007FFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0121A531230EB6DD0007FFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0121A533230EB6DD0007FFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0121A538230EB6DD0007FFAD /* HealthDataFetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthDataFetcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0121A53C230EB6DD0007FFAD /* HealthDataFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataFetcherTests.swift; sourceTree = "<group>"; };
+		0121A53E230EB6DD0007FFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0121A543230EB6DD0007FFAD /* HealthDataFetcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthDataFetcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0121A547230EB6DD0007FFAD /* HealthDataFetcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataFetcherUITests.swift; sourceTree = "<group>"; };
+		0121A549230EB6DD0007FFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0121A557230EB6F50007FFAD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		0121A558230EB6F50007FFAD /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		0121A55C230EB6FB0007FFAD /* FitbitInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitbitInterface.swift; sourceTree = "<group>"; };
+		0121A55F230EB7000007FFAD /* HealthKitInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitInterface.swift; sourceTree = "<group>"; };
+		0145A054230EBBC400E07C13 /* HealthDataFetcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthDataFetcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		0145A055230EBC2200E07C13 /* HealthDataFetcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthDataFetcher.entitlements; sourceTree = "<group>"; };
+		0145A056230EBC2300E07C13 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0145A059230EBCC700E07C13 /* FitbitAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAPIManager.m; sourceTree = "<group>"; };
+		0145A05A230EBCC700E07C13 /* FitbitAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAuthHandler.m; sourceTree = "<group>"; };
+		0145A05B230EBCC700E07C13 /* FitbitAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAPIManager.h; sourceTree = "<group>"; };
+		0145A05C230EBCC700E07C13 /* FitbitExplorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitExplorer.h; sourceTree = "<group>"; };
+		0145A05D230EBCC700E07C13 /* FitbitAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAuthHandler.h; sourceTree = "<group>"; };
+		0145A060230EBD0800E07C13 /* FitBitLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FitBitLogin.swift; path = ../../../FitBitLogin.swift; sourceTree = "<group>"; };
+		27878FF5ED862A5027469BC4 /* Pods-HealthDataFetcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcherTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcherTests/Pods-HealthDataFetcherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59F3FF01AAA83F32E8CF3E59 /* Pods-HealthDataFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcher.release.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcher/Pods-HealthDataFetcher.release.xcconfig"; sourceTree = "<group>"; };
+		72C84896A72469D7CA51C45E /* Pods_HealthDataFetcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthDataFetcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A933C2902C2B36CF0ED3FB6D /* Pods-HealthDataFetcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcher.debug.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcher/Pods-HealthDataFetcher.debug.xcconfig"; sourceTree = "<group>"; };
+		B362E9F1E87543F9E8694E58 /* Pods_HealthDataFetcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthDataFetcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B7729C0492E1FB5AB8CDE6 /* Pods-HealthDataFetcherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcherUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcherUITests/Pods-HealthDataFetcherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D155D2B7BB5FB40BE96CE179 /* Pods-HealthDataFetcherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcherUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcherUITests/Pods-HealthDataFetcherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE5CB0C777ADB09A67D8C7AC /* Pods-HealthDataFetcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcherTests.release.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcherTests/Pods-HealthDataFetcherTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF22D2283229FD19EFBA7476 /* Pods_HealthDataFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthDataFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0121A521230EB6DA0007FFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				615B4124A1386497AC720B0A /* Pods_HealthDataFetcher.framework in Frameworks */,
+				0145A057230EBC2300E07C13 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0121A535230EB6DD0007FFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56B7AF67DC53D866837C805 /* Pods_HealthDataFetcherTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0121A540230EB6DD0007FFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B03FE7B83C603F10D6076B /* Pods_HealthDataFetcherUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0121A51B230EB6DA0007FFAD = {
+			isa = PBXGroup;
+			children = (
+				0121A526230EB6DA0007FFAD /* HealthDataFetcher */,
+				0121A53B230EB6DD0007FFAD /* HealthDataFetcherTests */,
+				0121A546230EB6DD0007FFAD /* HealthDataFetcherUITests */,
+				0121A525230EB6DA0007FFAD /* Products */,
+				38ED96768D12605204C290F6 /* Pods */,
+				123E8268534F75E545D95001 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0121A525230EB6DA0007FFAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0121A524230EB6DA0007FFAD /* HealthDataFetcher.app */,
+				0121A538230EB6DD0007FFAD /* HealthDataFetcherTests.xctest */,
+				0121A543230EB6DD0007FFAD /* HealthDataFetcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0121A526230EB6DA0007FFAD /* HealthDataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				0145A055230EBC2200E07C13 /* HealthDataFetcher.entitlements */,
+				0121A55E230EB7000007FFAD /* HealthKit */,
+				0121A55B230EB6FB0007FFAD /* Fitbit */,
+				0121A556230EB6F50007FFAD /* Commom */,
+				0121A555230EB6EF0007FFAD /* Controller */,
+				0121A527230EB6DA0007FFAD /* AppDelegate.swift */,
+				0121A529230EB6DA0007FFAD /* ViewController.swift */,
+				0121A52B230EB6DA0007FFAD /* Main.storyboard */,
+				0121A52E230EB6DD0007FFAD /* Assets.xcassets */,
+				0121A530230EB6DD0007FFAD /* LaunchScreen.storyboard */,
+				0121A533230EB6DD0007FFAD /* Info.plist */,
+				0145A054230EBBC400E07C13 /* HealthDataFetcher-Bridging-Header.h */,
+			);
+			path = HealthDataFetcher;
+			sourceTree = "<group>";
+		};
+		0121A53B230EB6DD0007FFAD /* HealthDataFetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				0121A53C230EB6DD0007FFAD /* HealthDataFetcherTests.swift */,
+				0121A53E230EB6DD0007FFAD /* Info.plist */,
+			);
+			path = HealthDataFetcherTests;
+			sourceTree = "<group>";
+		};
+		0121A546230EB6DD0007FFAD /* HealthDataFetcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0121A547230EB6DD0007FFAD /* HealthDataFetcherUITests.swift */,
+				0121A549230EB6DD0007FFAD /* Info.plist */,
+			);
+			path = HealthDataFetcherUITests;
+			sourceTree = "<group>";
+		};
+		0121A555230EB6EF0007FFAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0145A060230EBD0800E07C13 /* FitBitLogin.swift */,
+			);
+			name = Controller;
+			path = ../../FitbitDataFetcher/FitbitDataFetcher/Controller;
+			sourceTree = "<group>";
+		};
+		0121A556230EB6F50007FFAD /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				0121A557230EB6F50007FFAD /* Common.swift */,
+				0121A558230EB6F50007FFAD /* DateExtension.swift */,
+			);
+			name = Commom;
+			path = ../../FitbitDataFetcher/FitbitDataFetcher/Commom;
+			sourceTree = "<group>";
+		};
+		0121A55B230EB6FB0007FFAD /* Fitbit */ = {
+			isa = PBXGroup;
+			children = (
+				0145A058230EBCC700E07C13 /* FitbitExplorer */,
+				0121A55C230EB6FB0007FFAD /* FitbitInterface.swift */,
+			);
+			name = Fitbit;
+			path = ../../FitbitDataFetcher/FitbitDataFetcher/Fitbit;
+			sourceTree = "<group>";
+		};
+		0121A55E230EB7000007FFAD /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				0121A55F230EB7000007FFAD /* HealthKitInterface.swift */,
+			);
+			name = HealthKit;
+			path = ../../FitbitDataFetcher/FitbitDataFetcher/HealthKit;
+			sourceTree = "<group>";
+		};
+		0145A058230EBCC700E07C13 /* FitbitExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				0145A059230EBCC700E07C13 /* FitbitAPIManager.m */,
+				0145A05A230EBCC700E07C13 /* FitbitAuthHandler.m */,
+				0145A05B230EBCC700E07C13 /* FitbitAPIManager.h */,
+				0145A05C230EBCC700E07C13 /* FitbitExplorer.h */,
+				0145A05D230EBCC700E07C13 /* FitbitAuthHandler.h */,
+			);
+			name = FitbitExplorer;
+			path = ../../../FitbitExplorer;
+			sourceTree = "<group>";
+		};
+		123E8268534F75E545D95001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0145A056230EBC2300E07C13 /* HealthKit.framework */,
+				FF22D2283229FD19EFBA7476 /* Pods_HealthDataFetcher.framework */,
+				B362E9F1E87543F9E8694E58 /* Pods_HealthDataFetcherTests.framework */,
+				72C84896A72469D7CA51C45E /* Pods_HealthDataFetcherUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38ED96768D12605204C290F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A933C2902C2B36CF0ED3FB6D /* Pods-HealthDataFetcher.debug.xcconfig */,
+				59F3FF01AAA83F32E8CF3E59 /* Pods-HealthDataFetcher.release.xcconfig */,
+				27878FF5ED862A5027469BC4 /* Pods-HealthDataFetcherTests.debug.xcconfig */,
+				DE5CB0C777ADB09A67D8C7AC /* Pods-HealthDataFetcherTests.release.xcconfig */,
+				B3B7729C0492E1FB5AB8CDE6 /* Pods-HealthDataFetcherUITests.debug.xcconfig */,
+				D155D2B7BB5FB40BE96CE179 /* Pods-HealthDataFetcherUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0121A523230EB6DA0007FFAD /* HealthDataFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0121A54C230EB6DD0007FFAD /* Build configuration list for PBXNativeTarget "HealthDataFetcher" */;
+			buildPhases = (
+				FBC3DB88A31CA152D1259D16 /* [CP] Check Pods Manifest.lock */,
+				0121A520230EB6DA0007FFAD /* Sources */,
+				0121A521230EB6DA0007FFAD /* Frameworks */,
+				0121A522230EB6DA0007FFAD /* Resources */,
+				42D04AAC03928EA96FEC2259 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthDataFetcher;
+			productName = HealthDataFetcher;
+			productReference = 0121A524230EB6DA0007FFAD /* HealthDataFetcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0121A537230EB6DD0007FFAD /* HealthDataFetcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0121A54F230EB6DD0007FFAD /* Build configuration list for PBXNativeTarget "HealthDataFetcherTests" */;
+			buildPhases = (
+				9C4E4467D6B7F58B1FC16041 /* [CP] Check Pods Manifest.lock */,
+				0121A534230EB6DD0007FFAD /* Sources */,
+				0121A535230EB6DD0007FFAD /* Frameworks */,
+				0121A536230EB6DD0007FFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0121A53A230EB6DD0007FFAD /* PBXTargetDependency */,
+			);
+			name = HealthDataFetcherTests;
+			productName = HealthDataFetcherTests;
+			productReference = 0121A538230EB6DD0007FFAD /* HealthDataFetcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0121A542230EB6DD0007FFAD /* HealthDataFetcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0121A552230EB6DD0007FFAD /* Build configuration list for PBXNativeTarget "HealthDataFetcherUITests" */;
+			buildPhases = (
+				4801B7B6755F198F5732C9CB /* [CP] Check Pods Manifest.lock */,
+				0121A53F230EB6DD0007FFAD /* Sources */,
+				0121A540230EB6DD0007FFAD /* Frameworks */,
+				0121A541230EB6DD0007FFAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0121A545230EB6DD0007FFAD /* PBXTargetDependency */,
+			);
+			name = HealthDataFetcherUITests;
+			productName = HealthDataFetcherUITests;
+			productReference = 0121A543230EB6DD0007FFAD /* HealthDataFetcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0121A51C230EB6DA0007FFAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Harpreet_kaur;
+				TargetAttributes = {
+					0121A523230EB6DA0007FFAD = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					0121A537230EB6DD0007FFAD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0121A523230EB6DA0007FFAD;
+					};
+					0121A542230EB6DD0007FFAD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0121A523230EB6DA0007FFAD;
+					};
+				};
+			};
+			buildConfigurationList = 0121A51F230EB6DA0007FFAD /* Build configuration list for PBXProject "HealthDataFetcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0121A51B230EB6DA0007FFAD;
+			productRefGroup = 0121A525230EB6DA0007FFAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0121A523230EB6DA0007FFAD /* HealthDataFetcher */,
+				0121A537230EB6DD0007FFAD /* HealthDataFetcherTests */,
+				0121A542230EB6DD0007FFAD /* HealthDataFetcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0121A522230EB6DA0007FFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0121A532230EB6DD0007FFAD /* LaunchScreen.storyboard in Resources */,
+				0121A52F230EB6DD0007FFAD /* Assets.xcassets in Resources */,
+				0121A52D230EB6DA0007FFAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0121A536230EB6DD0007FFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0121A541230EB6DD0007FFAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42D04AAC03928EA96FEC2259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthDataFetcher/Pods-HealthDataFetcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthDataFetcher/Pods-HealthDataFetcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4801B7B6755F198F5732C9CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthDataFetcherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4E4467D6B7F58B1FC16041 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthDataFetcherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC3DB88A31CA152D1259D16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthDataFetcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0121A520230EB6DA0007FFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0145A05F230EBCC800E07C13 /* FitbitAuthHandler.m in Sources */,
+				0145A05E230EBCC800E07C13 /* FitbitAPIManager.m in Sources */,
+				0121A560230EB7000007FFAD /* HealthKitInterface.swift in Sources */,
+				0121A52A230EB6DA0007FFAD /* ViewController.swift in Sources */,
+				0121A55A230EB6F50007FFAD /* DateExtension.swift in Sources */,
+				0121A559230EB6F50007FFAD /* Common.swift in Sources */,
+				0121A55D230EB6FB0007FFAD /* FitbitInterface.swift in Sources */,
+				0145A061230EBD0800E07C13 /* FitBitLogin.swift in Sources */,
+				0121A528230EB6DA0007FFAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0121A534230EB6DD0007FFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0121A53D230EB6DD0007FFAD /* HealthDataFetcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0121A53F230EB6DD0007FFAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0121A548230EB6DD0007FFAD /* HealthDataFetcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0121A53A230EB6DD0007FFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0121A523230EB6DA0007FFAD /* HealthDataFetcher */;
+			targetProxy = 0121A539230EB6DD0007FFAD /* PBXContainerItemProxy */;
+		};
+		0121A545230EB6DD0007FFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0121A523230EB6DA0007FFAD /* HealthDataFetcher */;
+			targetProxy = 0121A544230EB6DD0007FFAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0121A52B230EB6DA0007FFAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0121A52C230EB6DA0007FFAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0121A530230EB6DD0007FFAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0121A531230EB6DD0007FFAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0121A54A230EB6DD0007FFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0121A54B230EB6DD0007FFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0121A54D230EB6DD0007FFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A933C2902C2B36CF0ED3FB6D /* Pods-HealthDataFetcher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthDataFetcher/HealthDataFetcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P74WJZFNA;
+				INFOPLIST_FILE = HealthDataFetcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debut.component.HealthDataFetcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/HealthDataFetcher-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0121A54E230EB6DD0007FFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F3FF01AAA83F32E8CF3E59 /* Pods-HealthDataFetcher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HealthDataFetcher/HealthDataFetcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5P74WJZFNA;
+				INFOPLIST_FILE = HealthDataFetcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debut.component.HealthDataFetcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/HealthDataFetcher-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0121A550230EB6DD0007FFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27878FF5ED862A5027469BC4 /* Pods-HealthDataFetcherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthDataFetcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debut.component.HealthDataFetcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthDataFetcher.app/HealthDataFetcher";
+			};
+			name = Debug;
+		};
+		0121A551230EB6DD0007FFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE5CB0C777ADB09A67D8C7AC /* Pods-HealthDataFetcherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthDataFetcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debut.component.HealthDataFetcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthDataFetcher.app/HealthDataFetcher";
+			};
+			name = Release;
+		};
+		0121A553230EB6DD0007FFAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B7729C0492E1FB5AB8CDE6 /* Pods-HealthDataFetcherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthDataFetcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debut.component.HealthDataFetcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthDataFetcher;
+			};
+			name = Debug;
+		};
+		0121A554230EB6DD0007FFAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D155D2B7BB5FB40BE96CE179 /* Pods-HealthDataFetcherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthDataFetcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debut.component.HealthDataFetcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthDataFetcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0121A51F230EB6DA0007FFAD /* Build configuration list for PBXProject "HealthDataFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0121A54A230EB6DD0007FFAD /* Debug */,
+				0121A54B230EB6DD0007FFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0121A54C230EB6DD0007FFAD /* Build configuration list for PBXNativeTarget "HealthDataFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0121A54D230EB6DD0007FFAD /* Debug */,
+				0121A54E230EB6DD0007FFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0121A54F230EB6DD0007FFAD /* Build configuration list for PBXNativeTarget "HealthDataFetcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0121A550230EB6DD0007FFAD /* Debug */,
+				0121A551230EB6DD0007FFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0121A552230EB6DD0007FFAD /* Build configuration list for PBXNativeTarget "HealthDataFetcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0121A553230EB6DD0007FFAD /* Debug */,
+				0121A554230EB6DD0007FFAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0121A51C230EB6DA0007FFAD /* Project object */;
+}
