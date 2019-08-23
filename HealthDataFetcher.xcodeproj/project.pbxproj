@@ -17,11 +17,11 @@
 		0145A057230EBC2300E07C13 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0145A056230EBC2300E07C13 /* HealthKit.framework */; };
 		017F11B9230F9C61002808F4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11B7230F9C61002808F4 /* Common.swift */; };
 		017F11BA230F9C61002808F4 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11B8230F9C61002808F4 /* DateExtension.swift */; };
-		017F11BD230F9CC2002808F4 /* FitbitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11BC230F9CC1002808F4 /* FitbitInterface.swift */; };
-		017F11C0230F9CCD002808F4 /* HealthKitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11BF230F9CCD002808F4 /* HealthKitInterface.swift */; };
 		017F11C8230F9D08002808F4 /* FitbitAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 017F11C3230F9D08002808F4 /* FitbitAPIManager.m */; };
 		017F11C9230F9D08002808F4 /* FitbitAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 017F11C4230F9D08002808F4 /* FitbitAuthHandler.m */; };
-		017F11CB230F9D43002808F4 /* FitBitLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11CA230F9D43002808F4 /* FitBitLogin.swift */; };
+		017F11CE230FAC88002808F4 /* FitbitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11CD230FAC88002808F4 /* FitbitInterface.swift */; };
+		017F11D1230FACC5002808F4 /* HealthKitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11D0230FACC5002808F4 /* HealthKitInterface.swift */; };
+		017F11D4230FAD18002808F4 /* FitBitLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017F11D3230FAD18002808F4 /* FitBitLogin.swift */; };
 		615B4124A1386497AC720B0A /* Pods_HealthDataFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF22D2283229FD19EFBA7476 /* Pods_HealthDataFetcher.framework */; };
 		E56B7AF67DC53D866837C805 /* Pods_HealthDataFetcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B362E9F1E87543F9E8694E58 /* Pods_HealthDataFetcherTests.framework */; };
 		F6B03FE7B83C603F10D6076B /* Pods_HealthDataFetcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C84896A72469D7CA51C45E /* Pods_HealthDataFetcherUITests.framework */; };
@@ -63,14 +63,14 @@
 		0145A056230EBC2300E07C13 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		017F11B7230F9C61002808F4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		017F11B8230F9C61002808F4 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		017F11BC230F9CC1002808F4 /* FitbitInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitbitInterface.swift; sourceTree = "<group>"; };
-		017F11BF230F9CCD002808F4 /* HealthKitInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitInterface.swift; sourceTree = "<group>"; };
 		017F11C3230F9D08002808F4 /* FitbitAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAPIManager.m; sourceTree = "<group>"; };
 		017F11C4230F9D08002808F4 /* FitbitAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitbitAuthHandler.m; sourceTree = "<group>"; };
 		017F11C5230F9D08002808F4 /* FitbitAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAPIManager.h; sourceTree = "<group>"; };
 		017F11C6230F9D08002808F4 /* FitbitExplorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitExplorer.h; sourceTree = "<group>"; };
 		017F11C7230F9D08002808F4 /* FitbitAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitbitAuthHandler.h; sourceTree = "<group>"; };
-		017F11CA230F9D43002808F4 /* FitBitLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FitBitLogin.swift; path = HealthDataFetcher/Controller/FitBitLogin.swift; sourceTree = SOURCE_ROOT; };
+		017F11CD230FAC88002808F4 /* FitbitInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitbitInterface.swift; sourceTree = "<group>"; };
+		017F11D0230FACC5002808F4 /* HealthKitInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitInterface.swift; sourceTree = "<group>"; };
+		017F11D3230FAD18002808F4 /* FitBitLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitLogin.swift; sourceTree = "<group>"; };
 		27878FF5ED862A5027469BC4 /* Pods-HealthDataFetcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcherTests.debug.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcherTests/Pods-HealthDataFetcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59F3FF01AAA83F32E8CF3E59 /* Pods-HealthDataFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthDataFetcher.release.xcconfig"; path = "Target Support Files/Pods-HealthDataFetcher/Pods-HealthDataFetcher.release.xcconfig"; sourceTree = "<group>"; };
 		72C84896A72469D7CA51C45E /* Pods_HealthDataFetcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthDataFetcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,9 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				0145A055230EBC2200E07C13 /* HealthDataFetcher.entitlements */,
-				017F11C1230F9CEF002808F4 /* Controller */,
-				017F11BB230F9CC1002808F4 /* Fitbit */,
-				017F11BE230F9CCD002808F4 /* HealthKit */,
+				017F11D2230FACF7002808F4 /* Application */,
+				017F11CC230FAC5E002808F4 /* Fitbit Interface */,
+				017F11CF230FACAA002808F4 /* HealthKit Interface */,
 				017F11B6230F9C61002808F4 /* Commom */,
 				0121A527230EB6DA0007FFAD /* AppDelegate.swift */,
 				0121A529230EB6DA0007FFAD /* ViewController.swift */,
@@ -180,34 +180,6 @@
 			path = HealthDataFetcher/Commom;
 			sourceTree = SOURCE_ROOT;
 		};
-		017F11BB230F9CC1002808F4 /* Fitbit */ = {
-			isa = PBXGroup;
-			children = (
-				017F11C2230F9D08002808F4 /* FitbitExplorer */,
-				017F11BC230F9CC1002808F4 /* FitbitInterface.swift */,
-			);
-			name = Fitbit;
-			path = ../../../FitbitDataFetcher/FitbitDataFetcher/Fitbit;
-			sourceTree = "<group>";
-		};
-		017F11BE230F9CCD002808F4 /* HealthKit */ = {
-			isa = PBXGroup;
-			children = (
-				017F11BF230F9CCD002808F4 /* HealthKitInterface.swift */,
-			);
-			name = HealthKit;
-			path = ../../../FitbitDataFetcher/FitbitDataFetcher/HealthKit;
-			sourceTree = "<group>";
-		};
-		017F11C1230F9CEF002808F4 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				017F11CA230F9D43002808F4 /* FitBitLogin.swift */,
-			);
-			name = Controller;
-			path = ../../../FitbitDataFetcher/FitbitDataFetcher/Controller;
-			sourceTree = "<group>";
-		};
 		017F11C2230F9D08002808F4 /* FitbitExplorer */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,8 +190,33 @@
 				017F11C7230F9D08002808F4 /* FitbitAuthHandler.h */,
 			);
 			name = FitbitExplorer;
-			path = HealthDataFetcher/Fitbit/FitbitExplorer;
+			path = "HealthDataFetcher/Fitbit Interface/FitbitExplorer";
 			sourceTree = SOURCE_ROOT;
+		};
+		017F11CC230FAC5E002808F4 /* Fitbit Interface */ = {
+			isa = PBXGroup;
+			children = (
+				017F11C2230F9D08002808F4 /* FitbitExplorer */,
+				017F11CD230FAC88002808F4 /* FitbitInterface.swift */,
+			);
+			path = "Fitbit Interface";
+			sourceTree = "<group>";
+		};
+		017F11CF230FACAA002808F4 /* HealthKit Interface */ = {
+			isa = PBXGroup;
+			children = (
+				017F11D0230FACC5002808F4 /* HealthKitInterface.swift */,
+			);
+			path = "HealthKit Interface";
+			sourceTree = "<group>";
+		};
+		017F11D2230FACF7002808F4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				017F11D3230FAD18002808F4 /* FitBitLogin.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
 		};
 		123E8268534F75E545D95001 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -478,14 +475,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				017F11D1230FACC5002808F4 /* HealthKitInterface.swift in Sources */,
 				017F11C9230F9D08002808F4 /* FitbitAuthHandler.m in Sources */,
 				017F11C8230F9D08002808F4 /* FitbitAPIManager.m in Sources */,
-				017F11C0230F9CCD002808F4 /* HealthKitInterface.swift in Sources */,
+				017F11D4230FAD18002808F4 /* FitBitLogin.swift in Sources */,
+				017F11CE230FAC88002808F4 /* FitbitInterface.swift in Sources */,
 				017F11BA230F9C61002808F4 /* DateExtension.swift in Sources */,
-				017F11BD230F9CC2002808F4 /* FitbitInterface.swift in Sources */,
 				017F11B9230F9C61002808F4 /* Common.swift in Sources */,
 				0121A52A230EB6DA0007FFAD /* ViewController.swift in Sources */,
-				017F11CB230F9D43002808F4 /* FitBitLogin.swift in Sources */,
 				0121A528230EB6DA0007FFAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
