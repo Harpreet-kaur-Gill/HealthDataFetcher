@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         
         //Mark:-Function to Fetch Data From Fitbit.
         FitbitInterface.sharedInstance = FitbitInterface()
+        self.getStepsFromFitbit()
         NotificationCenter.default.addObserver(self,selector: #selector(self.getStepsFromFitbit),name: NSNotification.Name(rawValue:FitbitNotification),object: nil)
     }
     
